@@ -11,9 +11,9 @@ jobs:
       - node/install
       - checkout
       - node/install-yarn:
-        version: 1.22.4
+          version: 1.22.4
       - aws-cli/setup:
-        profile-name: default
+          profile-name: default
       - run: node --version
       - run: yarn
       - run: aws --version
