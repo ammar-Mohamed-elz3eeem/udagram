@@ -14,6 +14,7 @@ jobs:
           version: 1.22.4
       - aws-cli/setup:
           profile-name: default
+      - eb/setup
       - run: node --version
       - run: yarn
       - run: aws --version
