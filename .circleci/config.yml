@@ -19,3 +19,19 @@ jobs:
       - run: yarn
       - run: aws --version
       - run: eb --version
+      - run:
+          name: Install Backend Dendencies
+          command: |
+            npm run install:backend
+      - run:
+          name: Install Frontend Dendencies
+          command: |
+            npm run install:frontend
+      - run:
+          name: Build Backend Application
+          command: |
+            npm run build:backend
+      - run:
+          name: Build Frontend Application
+          command: |
+            npm run build:frontend
