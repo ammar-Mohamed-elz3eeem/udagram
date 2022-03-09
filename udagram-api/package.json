@@ -12,7 +12,7 @@
     "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1",
     "initEC": "eb create Ammarmassoududagram-env --single",
-    "deploy": "eb init udagram-application-ammar-massoud -r us-east-1 --profile default -p '64bit Amazon Linux 2 v5.5.0 running Node.js 16' && eb setenv SECRET_ACCESS_KEY_ID=$AWS_SECRET_ACCESS_KEY AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_BUCKET=$AWS_BUCKET AWS_REGION=$AWS_DEFAULT_REGION JWT_SECRET=$JWT_SECRET POSTGRE_DBNAME=$POSTGRE_DBNAME POSTGRE_HOST=$POSTGRE_HOST POSTGRE_PASSWORD=$POSTGRE_PASSWORD POSTGRE_PORT=$POSTGRE_PORT POSTGRE_USERNAME=$POSTGRE_USERNAME --profile default && eb deploy --profile default"
+    "deploy": "eb init udagram-application-ammar-massoud -r us-east-1 --profile default -p '64bit Amazon Linux 2 v5.5.0 running Node.js 16' && eb setenv SECRET_ACCESS_KEY_ID=$AWS_SECRET_ACCESS_KEY AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_BUCKET=$AWS_BUCKET AWS_REGION=$AWS_DEFAULT_REGION JWT_SECRET=$JWT_SECRET POSTGRE_DBNAME=$POSTGRE_DBNAME POSTGRE_HOST=$POSTGRE_HOST POSTGRE_PASSWORD=$POSTGRE_PASSWORD POSTGRE_PORT=$POSTGRE_PORT POSTGRE_USERNAME=$POSTGRE_USERNAME --profile default && eb deploy"
   },
   "keywords": [],
   "author": "Gabriel Ruttner",
