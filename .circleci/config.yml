@@ -13,7 +13,7 @@ jobs:
           node-version: "16.13"
       - run: node --version
       - aws-cli/setup:
-          profile-name: default
+          profile-name: $AWS_DEFAULT_REGION
       - eb/setup
       - run:
           name: Install Backend Dendencies
