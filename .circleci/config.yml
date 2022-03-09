@@ -8,10 +8,10 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
+      - checkout
       - node/install
           node-version: '16.13'
       - run: node --version
-      - checkout
       - aws-cli/setup:
           profile-name: default
       - eb/setup
